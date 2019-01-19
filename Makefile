@@ -81,6 +81,7 @@ ifeq ($(USE_SSE), 1)
 	CFLAGS += -msse2
 endif
 endif
+CFLAGS += -mavx
 
 ifndef LINT_LANG
 	LINT_LANG= "all"

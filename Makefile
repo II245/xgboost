@@ -76,7 +76,7 @@ export JAVAINCFLAGS = -I${JAVA_HOME}/include -I./java
 ifeq ($(TEST_COVER), 1)
 	CFLAGS += -g -O0 -fprofile-arcs -ftest-coverage
 else
-	CFLAGS += -O2 -funroll-loops
+	CFLAGS += -Ofast -funroll-loops
 ifeq ($(USE_SSE), 1)
 	CFLAGS += -msse4.2
 endif

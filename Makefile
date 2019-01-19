@@ -78,7 +78,7 @@ ifeq ($(TEST_COVER), 1)
 else
 	CFLAGS += -O3 -funroll-loops
 ifeq ($(USE_SSE), 1)
-	CFLAGS += -msse2
+	CFLAGS += -msse4.2
 endif
 endif
 CFLAGS += -mavx
